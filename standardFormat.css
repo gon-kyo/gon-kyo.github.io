@@ -96,6 +96,11 @@ body{
 		left: 0;
 		right: 0;
 	}
+	.everythingElse p3{
+		color: gray;
+		position: absolute;
+		bottom: 40px;
+	}
 	.everythingElse p2{
 		color: white;
 		text-align: left;
