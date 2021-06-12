@@ -116,4 +116,8 @@ body{
 		background-color: white;
 		color: black;
 		overflow: hidden;
+		font-size: 20px;
+		line-height: 40px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
