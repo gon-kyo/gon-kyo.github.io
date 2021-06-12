@@ -126,3 +126,20 @@ body{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.centeredPhoto{
+		position: fixed;
+		top: 250px;
+		left: 540px;
+		right: 540px;
+		height: 480px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+	.centeredPhoto img{
+		border: 5px outset white;
+		flex-shrink: 1;
+		min-height: 10px;
+		min-width: 10px;
+	}
