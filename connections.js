@@ -27,7 +27,7 @@ function goFirst(){
 }
 
 function goMostRecent(){
-	window.location.href="entries/001.html";
+	window.location.href="entries/002.html";
 }
 
 function goSecret(){

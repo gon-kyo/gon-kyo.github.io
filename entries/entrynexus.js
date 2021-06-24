@@ -31,7 +31,7 @@ function goFirst(){
 }
 
 function goMostRecent(){
-	window.location.href="001.html";
+	window.location.href="002.html";
 }
 
 function goSecret(){
