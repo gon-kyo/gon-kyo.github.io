@@ -82,7 +82,6 @@ body{
 		left: 240px;
 		right: 240px;
 		top: 40px;
-		height: 690px;
 	}
 	.everythingElse p1{
 		color: red;
@@ -117,15 +116,16 @@ body{
 		left: 280px;
 		right: 280px;
 		top: 120px;
-		bottom: 40px;
 		background-color: white;
 		color: black;
-		overflow: hidden;
+		bottom: 40px;
+		overflow: scroll;
 		font-size: 20px;
 		line-height: 40px;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
 	.centeredPhoto{
 		position: fixed;
 		top: 250px;
