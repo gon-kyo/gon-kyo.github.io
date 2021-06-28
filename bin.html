@@ -123,7 +123,19 @@
 			var dec = document.getElementById("dec").value;
 			var hex = document.getElementById("hex").value;
 			var ascii = document.getElementById("ascii").value;
-			if(
+			if(document.getElementById("bin").value!=bin){
+				var ass = bin.parseInt().toString(10);
+				document.getElementById('dec').innerHTML = ass;
+				var lol = bin.parseInt().toString(16);
+				document.getElementById('hex').innerHTML = lol;
+				document.getElementById('ascii').innerHTML = lol.fromCharCode();
+			}
+			else if(document.getElementById("dec").value!= dec){
+			}
+			else if(document.getElementById("hex").value!=hex){
+			}
+			else if(document.getElementById("ascii").value!=ascii){
+			}
 		}
 	</script>
 </div>
