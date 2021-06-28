@@ -118,6 +118,10 @@
 		}
 	</style>
 	<script>
+		jQuery('bin').on('input', function() {
+			convert();
+		});
+		
 		function convert(){
 			var bin = document.getElementById("bin").value;
 			var dec = document.getElementById("dec").value;
