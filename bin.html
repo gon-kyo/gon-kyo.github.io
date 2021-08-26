@@ -94,13 +94,13 @@
 	</p2>
 	<form >
 		<label id="binLabel "for="bin">Binary:</label><br>
-			<input onInput="calcB" onChange="calcB" type="number" id="bin" name="bin"><br>
+			<input onInput="calcB" onChange="calcB" type="number" id="bin"><br>
 		<label id="decLabel" for="dec">Decimal:</label><br>
-			<input onInput="calcD" onChange="calcD" type="number" id="dec" name="dec"><br>
+			<input onInput="calcD" onChange="calcD" type="number" id="dec" ><br>
 		<label id="hexLabel" for="hex">Hexidecimal:</label><br>
-			<input onInput="calcH" onChange="calcH" type="number" id="hex" name="hex"><br>
+			<input onInput="calcH" onChange="calcH" type="number" id="hex" ><br>
 		<label id="asciiLabel" for="ascii">Ascii:</label><br>
-			<input onInput="calcA" onChange="calcA" type="text" id="ascii" name="ascii"><br>
+			<input onInput="calcA" onChange="calcA" type="text" id="ascii" ><br>
 	</form>
 	<style>
 		form{
@@ -120,12 +120,10 @@
 	<script>
 		function calcB{
 			x = document.getElementById("bin").value;
-			y = parseInt("x",2);
-			z = y.toString(16);
+			y = document.getElementById("dec").value;
+			z = document.getElementById("hex").value;
 			a = document.getElementById("ascii").value;
-			document.getElementById("dec").value = y;
-			document.getElementById("hex").value = z;
-			document.getElementById("ascii").value = "null";
+			document.getElementById("dec").value = x*10;
 		}
 		function calcD{
 		}
