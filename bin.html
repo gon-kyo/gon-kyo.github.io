@@ -102,7 +102,7 @@
 		<label for="ascii">Ascii:</label><br>
 			<input type="text" id="ascii" name="ascii" value="null"><br>
 		<button type="reset">Reset</button>
-		<button type="submit">Calculate</button>
+		<button onClick="convert">Calculate</button>
 	</form>
 	<style>
 		form{
@@ -120,27 +120,23 @@
 		}
 	</style>
 	<script>
-		jQuery('bin').on('input', function() {
-			convert();
-		});
-		
 		function convert(){
 			var bin = document.getElementById("bin").value;
 			var dec = document.getElementById("dec").value;
 			var hex = document.getElementById("hex").value;
 			var ascii = document.getElementById("ascii").value;
-			if(document.getElementById("bin").value!=bin){
-				var ass = bin.parseInt().toString(10);
-				document.getElementById('dec').innerHTML = ass;
+			if(document.getElementById("bin").value!="0000"){
+				var krass = bin.parseInt().toString(10);
+				document.getElementById('dec').innerHTML = krass;
 				var lol = bin.parseInt().toString(16);
 				document.getElementById('hex').innerHTML = lol;
 				document.getElementById('ascii').innerHTML = lol.fromCharCode();
 			}
-			else if(document.getElementById("dec").value!= dec){
+			else if(document.getElementById("dec").value!= "0"){
 			}
-			else if(document.getElementById("hex").value!=hex){
+			else if(document.getElementById("hex").value!="00"){
 			}
-			else if(document.getElementById("ascii").value!=ascii){
+			else if(document.getElementById("ascii").value!="null"){
 			}
 		}
 	</script>
