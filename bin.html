@@ -92,16 +92,16 @@
 	to the information, so I've included a tool for it on this page. If you'd like to know more about the math behind it though,
 	I'd suggest you start looking <a href="https://en.wikipedia.org/wiki/Binary_number"> here</a>.
 	</p2>
-	
-	<label id="binLabel "for="bin">Binary:</label><br>
-		<input type="number" oninput="calcB()" onchange="calcB()" id="bin"><br>
-	<label id="decLabel" for="dec">Decimal:</label><br>
-		<input type="number" oninput="calcD()" onchange="calcD()"  id="dec" ><br>
-	<label id="hexLabel" for="hex">Hexidecimal:</label><br>
-		<input onInput="calcH()" onChange="calcH()" id="hex" ><br>
-	<label id="asciiLabel" for="ascii">Ascii:</label><br>
-		<input onInput="calcA()" onChange="calcA()" id="ascii" ><br>
-
+	<form >
+		<label id="binLabel "for="bin">Binary:</label><br>
+			<input type="number" onchange="calcB()" id="bin"><br>
+		<label id="decLabel" for="dec">Decimal:</label><br>
+			<input type="number" onchange="calcD()"  id="dec" ><br>
+		<label id="hexLabel" for="hex">Hexidecimal:</label><br>
+			<input onChange="calcH()" id="hex" ><br>
+		<label id="asciiLabel" for="ascii">Ascii:</label><br>
+			<input onChange="calcA()" id="ascii" ><br>
+	</form>
 	<style>
 		form{
 			position: fixed;
@@ -119,11 +119,7 @@
 	</style>
 	<script>
 		function calcB{
-			x = document.getElementById("bin").value;
-			y = document.getElementById("dec").value;
-			z = document.getElementById("hex").value;
-			a = document.getElementById("ascii").value;
-			document.getElementById("dec").value = x*10;
+			
 		}
 		function calcD{
 		}
