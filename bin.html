@@ -120,7 +120,16 @@
 	<script>
 		function calcB(){
 			var x = document.getElementById("bin").value;
-			document.getElementById("dec").value = x*10;
+			if(x == /(1|0)*/){
+				document.getElementById("dec").value = x*10;
+				document.getElementById("hex").value = x*10;
+				document.getElementById("ascii").value = x*10;
+			}
+			else{
+				document.getElementById("dec").value = "xxxxx";
+				document.getElementById("hex").value = "xxxxx";
+				document.getElementById("ascii").value = "xxxxx";
+			}
 		}
 		function calcD(){
 			var y = document.getElementById("dec").value;
