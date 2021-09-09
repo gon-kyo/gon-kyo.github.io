@@ -120,7 +120,7 @@
 	<script>
 		function calcB(){
 			var x = document.getElementById("bin").value;
-			if(x == /(1|0)*/){
+			if(/(1*0*)*/.test(x)){
 				document.getElementById("dec").value = x*10;
 				document.getElementById("hex").value = x*10;
 				document.getElementById("ascii").value = x*10;
