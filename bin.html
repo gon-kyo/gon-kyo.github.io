@@ -94,7 +94,7 @@
 	</p2>
 	<form >
 		<label id="binLabel" for="bin">Binary:</label><br>
-			<input onkeyup="calcB()" id="bin"><br>
+			<input pattern="[0-1]" onkeyup="calcB()" id="bin"><br>
 		<label id="decLabel" for="dec">Decimal:</label><br>
 			<input onkeyup="calcD()"  id="dec" ><br>
 		<label id="hexLabel" for="hex">Hexidecimal:</label><br>
@@ -120,16 +120,9 @@
 	<script>
 		function calcB(){
 			var x = document.getElementById("bin").value;
-			if(/(1*0*)*/.test(x)){
 				document.getElementById("dec").value = x*10;
 				document.getElementById("hex").value = x*10;
 				document.getElementById("ascii").value = x*10;
-			}
-			else{
-				document.getElementById("dec").value = "xxxxx";
-				document.getElementById("hex").value = "xxxxx";
-				document.getElementById("ascii").value = "xxxxx";
-			}
 		}
 		function calcD(){
 			var y = document.getElementById("dec").value;
