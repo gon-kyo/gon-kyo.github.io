@@ -33,3 +33,13 @@ function goMostRecent(){
 function goSecret(){
 	window.location.href="secret.html";
 }
+
+function playHolyDiver(){
+}
+
+function playNeverGonna(){
+	const music = new Audio('adf.wav');
+	music.play();
+	music.loop =false;
+	music.playbackRate = 2;
+}
