@@ -38,7 +38,7 @@ function playHolyDiver(){
 }
 
 function playNeverGonna(){
-	const music = new Audio('adf.wav');
+	const music = new Audio('RickRoll.mp3');
 	music.play();
 	music.loop =false;
 	music.playbackRate = 2;
