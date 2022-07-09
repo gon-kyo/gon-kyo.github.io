@@ -76,14 +76,14 @@ body{
 		min-height: 100%;
 		min-width: 100%;
 	}
-	.everythingElse{
+	.TopText{
 		border: none;
 		position: fixed;
 		left: 240px;
 		right: 240px;
 		top: 40px;
 	}
-	.everythingElse p1{
+	.TopText p1{
 		color: red;
 		font-family: Times;
 		font-size: 60px;
@@ -94,11 +94,11 @@ body{
 		left: 0;
 		right: 0;
 	}
-	.everythingElse p3{
+	.TopText p3{
 		color: gray;
 		position: absolute;
 	}
-	.everythingElse p2{
+	.TopText p2{
 		color: white;
 		text-align: left;
 		font-family: Times;
@@ -141,4 +141,3 @@ body{
 		min-height: 10px;
 		min-width: 10px;
 	}
-	
