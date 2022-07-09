@@ -2,12 +2,12 @@ function goHome(){
 	window.location.href="index.html";
 }
 
-function goBin(){
-	window.location.href="bin.html";
+function goArt(){
+	window.location.href="ART.html";
 }
 
-function goWheel(){
-	window.location.href="wheel.html";
+function goTravel(){
+	window.location.href="TRAVEL.html";
 }
 
 function goAbout(){
@@ -22,16 +22,12 @@ function goArchive(){
 	window.location.href="archive.html";
 }
 
-function goFirst(){
-	window.location.href="entries/001.html";
+function goWS(){
+	window.location.href="WRITINGSCRAPS.html";
 }
 
-function goMostRecent(){
-	window.location.href="entries/002.html";
-}
-
-function goSecret(){
-	window.location.href="secret.html";
+function goStories(){
+	window.location.href="STORIES.html"
 }
 
 function playHolyDiver(){
