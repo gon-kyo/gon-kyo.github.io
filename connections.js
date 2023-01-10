@@ -30,6 +30,15 @@ function goStories(){
 	window.location.href="STORIES.html"
 }
 
+function detectClientBrowser(){
+	let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+	if(matched)
+		return "standardFormat.css";
+	else
+		return "lightmode.css";
+}
+
 function playHolyDiver(){
 }
 

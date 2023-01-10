@@ -6,7 +6,15 @@
 	<title>
 		Links
 	</title>
-	<link rel="stylesheet" href="standardFormat.css">
+	<script>
+	let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+	if(matched)
+		document.link.href="standardformat.css";
+	else
+		document.link.href="lightmode.css";
+	</script>
+	<link rel="stylesheet">
 	<script type="text/javascript" src="connections.js"></script>
 </head>
 
@@ -82,7 +90,7 @@
 		<img src="placeholder.png" alt="yourAddHere" width="200" height="680">
 	</div>
 
-	<div class="everythingElse">
+	<div class="TopText">
 		<p1>Links
 		</p1>
 		<p2>There are no links as of yet as there is nowhere I need to refer you to. As such, have this visual gag instead.
